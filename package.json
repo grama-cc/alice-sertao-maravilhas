@@ -1,0 +1,28 @@
+{
+  "name": "alice-sertao-maravilhas",
+  "version": "1.0.0",
+  "description": "Alice no Sertão das Maravilhas",
+  "main": "index.html",
+  "scripts": {
+    "watch": "node ./node_modules/gulp/bin/gulp.js watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grama-cc/alice-sertao-maravilhas.git"
+  },
+  "author": "Grama",
+  "license": "CC-BY-SA",
+  "bugs": {
+    "url": "https://github.com/grama-cc/alice-sertao-maravilhas/issues"
+  },
+  "homepage": "https://github.com/grama-cc/alice-sertao-maravilhas#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "jquery": "^2.2.1",
+    "jquery-form": "^3.50.0"
+  }
+}
