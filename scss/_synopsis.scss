@@ -1,0 +1,54 @@
+#synopsis {
+  align-items: center;
+  background: url($img-path + 'synopsis-bg.svg') $pink no-repeat center center;
+  background-size: 90% 90%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  h2 {
+    color: $white;
+    font-family: 'Merriweather', serif;
+    font-size: 62px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 90px;
+  }
+
+  .text {
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    max-width: 800px;
+
+    p {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .line-break {
+    bottom: 0;
+    height: auto;
+    min-width: 100%;
+    position: absolute;
+
+    svg {
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      polygon {
+        fill: $light-violet;
+      }
+    }
+  }
+}

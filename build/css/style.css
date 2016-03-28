@@ -49,6 +49,12 @@ table {
   font-weight: bold;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../assets/fonts/roboto.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 header {
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -153,5 +159,53 @@ header {
         fill: none;
         stroke-linecap: round;
         stroke: #ffffff; }
+
+#synopsis {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../assets/images/synopsis-bg.svg") #ed1163 no-repeat center center;
+  background-size: 90% 90%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%; }
+  #synopsis h2 {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-size: 62px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 90px; }
+  #synopsis .text {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    max-width: 800px; }
+    #synopsis .text p {
+      margin-bottom: 30px; }
+      #synopsis .text p:last-child {
+        margin-bottom: 0; }
+  #synopsis .line-break {
+    bottom: 0;
+    height: auto;
+    min-width: 100%;
+    position: absolute; }
+    #synopsis .line-break svg {
+      display: block;
+      height: 100%;
+      width: 100%; }
+      #synopsis .line-break svg polygon {
+        fill: #8988b8; }
 
 /*# sourceMappingURL=style.css.map */
