@@ -1,10 +1,11 @@
 header {
   align-items: center;
   display: flex;
-  height: 60px;
+  padding: 26px 0;
   justify-content: center;
   width: 100%;
   position: absolute;
+  box-sizing: border-box;
 
   #nav {
     li {
@@ -17,8 +18,9 @@ header {
 
       a {
         color: $white;
-        font-size: 24px;
-        letter-spacing: 1px;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        font-size: normal;
         text-decoration: none;
         text-transform: lowercase;
       }

@@ -2,7 +2,12 @@ $font-path: '../../assets/fonts/';
 $img-path: '../../assets/images/';
 
 $black: #000000;
-$orange: #f67e27;
+$brown: #910811;
+$dark-pink: #c0005f;
+$light-violet: #8988b8;
+$orange: #f57e25;
+$pink: #ed1163;
+$violet: #6b5a8c;
 $white: #ffffff;
 
 @function calc-responsive($value1, $value2, $width1: 320, $width2: 1920) {

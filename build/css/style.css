@@ -43,6 +43,12 @@ table {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../assets/fonts/merriweather-bold-italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
 header {
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -50,12 +56,13 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  padding: 26px 0;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  position: absolute; }
+  position: absolute;
+  box-sizing: border-box; }
   header #nav li {
     display: inline-block;
     margin-right: 60px; }
@@ -63,8 +70,9 @@ header {
       margin-right: 0; }
     header #nav li a {
       color: #ffffff;
-      font-size: 24px;
-      letter-spacing: 1px;
+      font-size: 18px;
+      font-family: 'Merriweather', serif;
+      font-size: normal;
       text-decoration: none;
       text-transform: lowercase; }
 
@@ -73,8 +81,77 @@ header {
   color: #000000; }
 
 #highlight {
-  background-color: #f67e27;
-  width: 100%;
-  height: 100vh; }
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../assets/images/highlight-bg.svg") #f57e25 no-repeat center center;
+  background-size: 70% 70%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  #highlight .title {
+    display: block;
+    height: 392px;
+    margin-top: -20px;
+    max-height: 50%;
+    max-width: 60%;
+    width: 400px; }
+  #highlight .subtitle {
+    color: #910811;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 140px;
+    margin-top: -140px;
+    text-align: center;
+    width: 100%; }
+    #highlight .subtitle .based {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    #highlight .subtitle .work-by {
+      font-size: 20px;
+      font-weight: lighter; }
+  #highlight .line-break {
+    bottom: 0;
+    height: auto;
+    min-width: 100%;
+    position: absolute; }
+    #highlight .line-break svg {
+      display: block;
+      height: 100%;
+      width: 100%; }
+      #highlight .line-break svg polygon {
+        fill: #ed1163; }
+  #highlight .next {
+    bottom: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    #highlight .next .text {
+      letter-spacing: 1px;
+      margin-bottom: 12px; }
+    #highlight .next .arrow {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      width: 60px; }
+      #highlight .next .arrow polyline {
+        fill: none;
+        stroke-linecap: round;
+        stroke: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
