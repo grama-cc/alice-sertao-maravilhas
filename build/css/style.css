@@ -208,4 +208,171 @@ header {
       #synopsis .line-break svg polygon {
         fill: #8988b8; }
 
+#characters {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8988b8;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0 165px;
+  position: relative;
+  width: 100%; }
+  #characters #carousel {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 960px; }
+    #characters #carousel .content {
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2;
+      overflow: hidden;
+      width: 840px; }
+      #characters #carousel .content .items {
+        -webkit-align-items: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+        min-width: 6720px; }
+        #characters #carousel .content .items .item {
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          box-sizing: border-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-wrap: nowrap;
+              -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          padding: 10px 20px;
+          width: 840px; }
+          #characters #carousel .content .items .item .illustration {
+            display: block;
+            width: 38%; }
+          #characters #carousel .content .items .item .about {
+            color: #ffffff;
+            width: 58%; }
+            #characters #carousel .content .items .item .about h3 {
+              font-family: 'Merriweather', serif;
+              font-size: 48px;
+              font-style: italic;
+              font-weight: bold;
+              margin-bottom: 40px;
+              margin-left: 8px; }
+            #characters #carousel .content .items .item .about .description {
+              font-family: 'Roboto', sans-serif;
+              font-size: 18px;
+              font-weight: normal;
+              line-height: 20px; }
+    #characters #carousel .prev,
+    #characters #carousel .next {
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 30px; }
+      #characters #carousel .prev svg,
+      #characters #carousel .next svg {
+        display: block;
+        height: auto;
+        width: 100%; }
+        #characters #carousel .prev svg polyline,
+        #characters #carousel .next svg polyline {
+          fill: none;
+          stroke-linecap: round;
+          stroke-width: 3px;
+          stroke: #ffffff; }
+    #characters #carousel .prev {
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
+    #characters #carousel .next {
+      -webkit-order: 3;
+          -ms-flex-order: 3;
+              order: 3; }
+    #characters #carousel .indicators {
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-order: 4;
+          -ms-flex-order: 4;
+              order: 4;
+      width: 100%; }
+      #characters #carousel .indicators li {
+        background: #6b5a8c;
+        background-size: cover;
+        border-radius: 100%;
+        display: inline-block;
+        height: 48px;
+        margin: 0 12px;
+        width: 48px; }
+        #characters #carousel .indicators li.active {
+          height: 72px;
+          width: 72px; }
+  #characters .line-break {
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%; }
+    #characters .line-break svg {
+      display: block;
+      height: 100%;
+      width: 100%; }
+      #characters .line-break svg path {
+        fill: #f57e25; }
+
 /*# sourceMappingURL=style.css.map */

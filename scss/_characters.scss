@@ -1,0 +1,144 @@
+#characters {
+  align-items: center;
+  background-color: $light-violet;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 0 165px;
+  position: relative;
+  width: 100%;
+
+  #carousel {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+
+    .content {
+      order: 2;
+      overflow: hidden;
+      width: 840px;
+
+      .items {
+        align-items: baseline;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-width: 6720px;
+
+        .item {
+          align-items: center;
+          box-sizing: border-box;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding: 10px 20px;
+          width: 840px;
+
+          .illustration {
+            display: block;
+            width: 38%;
+          }
+
+          .about {
+            color: $white;
+            width: 58%;
+
+            h3 {
+              font-family: 'Merriweather', serif;
+              font-size: 48px;
+              font-style: italic;
+              font-weight: bold;
+              margin-bottom: 40px;
+              margin-left: 8px;
+            }
+
+            .description {
+              font-family: 'Roboto', sans-serif;
+              font-size: 18px;
+              font-weight: normal;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .prev,
+    .next {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      width: 30px;
+
+      svg {
+        display: block;
+        height: auto;
+        width: 100%;
+
+        polyline {
+          fill: none;
+          stroke-linecap: round;
+          stroke-width: 3px;
+          stroke: $white;
+        }
+      }
+    }
+
+    .prev {
+      order: 1;
+    }
+
+    .next {
+      order: 3;
+    }
+
+    .indicators {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      order: 4;
+      width: 100%;
+
+      li {
+        background: $violet;
+        background-size: cover;
+        border-radius: 100%;
+        display: inline-block;
+        height: 48px;
+        margin: 0 12px;
+        width: 48px;
+
+        &.active {
+          height: 72px;
+          width: 72px;
+        }
+      }
+    }
+  }
+
+  .line-break {
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+
+    svg {
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      path {
+        fill: $orange;
+      }
+    }
+  }
+}
