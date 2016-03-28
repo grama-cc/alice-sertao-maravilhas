@@ -25,6 +25,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../assets/fonts/merriweather.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../assets/fonts/merriweather-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../assets/fonts/merriweather-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 header {
   -webkit-align-items: center;
       -ms-flex-align: center;
