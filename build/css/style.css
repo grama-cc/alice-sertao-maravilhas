@@ -469,4 +469,83 @@ header {
       #preview .line-break svg polygon {
         fill: #ed1163; }
 
+#reserve {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../assets/images/reserve-bg.png") top left repeat #ed1163;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 90px 0 120px;
+  position: relative;
+  width: 100%; }
+  #reserve h2 {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-size: 62px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 90px;
+    text-align: center;
+    width: 100%; }
+  #reserve .text {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    max-width: 800px; }
+    #reserve .text p {
+      margin-bottom: 30px;
+      text-align: center; }
+      #reserve .text p:last-child {
+        margin-bottom: 0; }
+    #reserve .text input[type='text'] {
+      background-color: #ffffff;
+      border: none;
+      display: block;
+      font-family: 'Merriweather', serif;
+      font-size: 24px;
+      font-style: italic;
+      letter-spacing: 1px;
+      margin: 0 auto 40px;
+      outline: none;
+      padding: 12px 24px;
+      text-align: center;
+      width: 60%; }
+    #reserve .text input[type='submit'] {
+      background: none;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      cursor: pointer;
+      display: block;
+      font-family: 'Merriweather', serif;
+      font-size: 24px;
+      font-style: italic;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      outline: none;
+      padding: 12px 24px;
+      text-align: center;
+      width: 66%; }
+  #reserve .line-break {
+    bottom: 0;
+    height: auto;
+    min-width: 100%;
+    position: absolute; }
+    #reserve .line-break svg {
+      display: block;
+      height: 100%;
+      width: 100%; }
+      #reserve .line-break svg polygon {
+        fill: #ed1163; }
+
 /*# sourceMappingURL=style.css.map */
